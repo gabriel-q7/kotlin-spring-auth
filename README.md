@@ -65,7 +65,7 @@ Build:
 - Public endpoints:
   - `POST /auth/register`
   - `POST /auth/login`
-- All other endpoints require valid ******
+- All other endpoints require a valid JWT bearer token
 - BCrypt is used for password hashing
 
 ## API Endpoints
@@ -125,7 +125,7 @@ Response (`200 OK`):
 
 ### User
 
-> Add header: `Authorization: ******
+> Add the Authorization header using the credential returned by login/register.
 
 - `GET /users/me`
 - `GET /users/{id}`
