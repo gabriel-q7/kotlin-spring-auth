@@ -30,7 +30,7 @@ SQLite configuration is in:
 
 Defaults:
 
-- DB file: `./data/backend.db`
+- DB file: `./backend.db`
 - Hibernate: `ddl-auto: update`
 - Users table includes:
   - `id`
